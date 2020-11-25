@@ -1,5 +1,5 @@
 #reload CSV file and store as ECPNEW (no need to parse and subset every single time)
-ECPNEW <- read.csv("/Users/xpinto/Desktop/Data_Science/hpc_subset.csv", header = TRUE, dec = ".")
+ECPNEW <- read.csv("/Users/xpinto/Desktop/Data_Science/Course 4 - Exploratory Data Analysis/hpc_subset.csv", header = TRUE, dec = ".")
 
 # Convert New Column to Date & Time Format
 ECPNEW$NewDateTime <- as.POSIXct(ECPNEW$DateTime, format = " %d/%m/%Y %H:%M:%S")
